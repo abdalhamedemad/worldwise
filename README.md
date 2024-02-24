@@ -1,155 +1,119 @@
-# React + Vite
+<p align="center">
+  <a href="" rel="noopener">
+ <img src="./public//logo.png" alt="Project logo" width="200"></a>
+ </a>
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h3 align="center">🌐 WorldWise</h3>
 
-Currently, two official plugins are available:
+<div align="center">
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[![Status](https://img.shields.io/badge/status-active-success.svg)]()
+[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
-## Reacr Router
+</div>
 
-- install >> npm install react-router-dom
-- to use router
-  ```js
-  import { BrowserRouter, Route, Routes } from "react-router-dom";
-  import Product from "./pages/Product.jsx";
-  function App() {
-    return (
-      <BrowserRouter>
-        <Routes>
-          <Route path="product" element={<Product />} />
-        </Routes>
-      </BrowserRouter>
-    );
-  }
-  ```
-- when we navigtate using the anchor tag, the page will refresh and the state will be lost. To avoid this we use Link tag
-  ```js
-  import { Link } from "react-router-dom";
-  <Link to="product">Product</Link>;
-  <NavLink to="product">Product</NavLink>;
-  ```
-- the difference between Link and NavLink is that NavLink give a class active to the current page
+---
 
-## scope CSS (CSS Module)
+<p align="center"> Pizza ordering website.
+    <br> 
+</p>
 
-- to use global styling , first make a css file and add it in the src folder and import it in main.jsx
+## 📝 Table of Contents
 
-- naming the css file by name.module.css
-- import the css file
-  ```js
-  import styles from "./Product.module.css";
-  ```
-- in the css file, we can use the class name as object
-  ```css
-  .product {
-    background-color: red;
-  }
-  ```
-- use the class name as object
-  ```js
-  <div className={styles.product}>
-    <h1>Product</h1>
-  </div>
-  ```
-  - we can global a class inside css module by using :global
-    ```css
-    :global(.product) {
-      background-color: red;
-    }
-    ```
-- in router when U wnat to use the active class, we can use the active class name as object
-  ```js
-  <NavLink to="product" className={styles.active}>
-    Product
-  </NavLink>
-  ```
-  in module css file to select the active class
-  ```css
-  :global(.active) {
-    background-color: red;
-  }
-  ```
+- [About](#about)
+- [Screen Shots](#screen_shots)
+- [Getting Started](#getting_started)
+- [Usage](#usage)
+- [Built Using](#built_using)
+- [License](#license)
 
-### Dynamic Routing
+## 🧐 About <a name = "about"></a>
 
-- to use dynamic routing, we need to use the colon in the path
-  ```js
-  <Route path="product/:id" element={<Product />} />
-  ```
-- to get the id from the url, we use useParams hook
-  ```js
-  import { useParams } from "react-router-dom";
-  function Product() {
-    const { id } = useParams();
-    return (
-      <div>
-        <h1>Product {id}</h1>
-      </div>
-    );
-  }
-  ```
+"WorldWise" is a user-friendly app designed to help users track their travel experiences and plan future trips effortlessly. Users can easily create lists of visited and desired destinations, complete with notes for each location. With its simplicity and convenience, "WorldWise" serves as a valuable tool for organizing travels and inspiring future adventures..
 
-### Query String
+## 🚀 Live Demo <a name = "life_demo"></a>
 
-- to use query string, we need to use the question mark in the path
-  ```js
-  <Route path="product" element={<Product />} />
-  ```
-- to get the query string from the url, we use useSearchParams hook
+<a href="https://fastpizzaco23.netlify.app" _target="blank">Life Demo</a>
 
-  ```js
-  import { useSearchParams } from "react-router-dom";
-  function Product() {
-    const [searchParams, setSearchParams] = useSearchParams();
-    setSearchParams({ lat: 1, lng: 2 });
-    return (
-      <div>
-        <h1>
-          Product
-          {searchParams.get("id")}
-        </h1>
-      </div>
-    );
-  }
-  ```
+## 📸 Screenshots <a name = "screen_shots"></a>
 
-- the power of storing data in URL is that we can share the URL with others and they can see the same data
+### 🏠 Home Page
 
-### navigate to a page
+![screenshot](https://github.com/abdalhamedemad/Fast-Pizza-Co./blob/main/screenshots/1.png?raw=true)
 
-- to navigate to a page, we use useNavigate hook
+### 💵 Pricing Page
 
-```js
-import { useNavigate } from "react-router-dom";
-function Product() {
-  const navigate = useNavigate();
-  return (
-    <div>
-      <h1>Product</h1>
-      <button onClick={() => navigate("/")}>Home</button>
-    </div>
-  );
-}
+![screenshot](https://github.com/abdalhamedemad/Fast-Pizza-Co./blob/main/screenshots/2.png?raw=true)
+
+### ℹ️ About Page
+
+![screenshot](https://github.com/abdalhamedemad/Fast-Pizza-Co./blob/main/screenshots/3.png?raw=true)
+
+### 🗺️ Main Page
+
+![screenshot](https://github.com/abdalhamedemad/Fast-Pizza-Co./blob/main/screenshots/4.png?raw=true)
+
+### 🌐 Cities Section
+
+![screenshot](https://github.com/abdalhamedemad/Fast-Pizza-Co./blob/main/screenshots/5.png?raw=true)
+
+### ➕ Add info. Section
+
+![screenshot](https://github.com/abdalhamedemad/Fast-Pizza-Co./blob/main/screenshots/6.png?raw=true)
+
+## 🏁 Getting Started <a name = "getting_started"></a>
+
+To install this App follow the instructions below.
+
+### Prerequisites
+
+npm and nodejs should be installed on your system.
+
+### Installing
+
+1. to clone the repository run the following command
+
+```bash
+git clone https://github.com/abdalhamedemad/worldwise.git
 ```
 
-- to navigate back to the previous page
+2. to install the dependencies run the following command
 
-```js
-import { useNavigate } from "react-router-dom";
-
-navigate(-1);
-// -1 means go back one page
-// +1 means go forward one page
+```bash
+npm install
 ```
 
+3. to start the app run the following command
+
+```bash
+npm run dev
 ```
 
+4. to start the Json Server run the following command
+
+```bash
+npm run server
 ```
 
-### install the Map
+## 🎈 Usage <a name="usage"></a>
 
-- > > npm install react-leaflet leaflet
+after starting the app you can access the app on the following url
 
-- documentation: https://react-leaflet.js.org/docs/start-installation
+```bash
+http://localhost:5173
+```
+
+## ⛏️ Built Using <a name = "built_using"></a>
+
+- [React](https://reactjs.org/) - Web Framework
+- [Vite](https://vitejs.dev/) - Build Tool
+- [React-Router](https://reactrouter.com/) - Routing Library
+- [Json-Server](https://www.npmjs.com/package/json-server) - Fake Rest API
+- [react-leaflet](https://react-leaflet.js.org/) - Map Library
+
+## 📄 License <a name = "authors"></a>
+
+This project is licensed under the MIT License - see the [LICENSE.md](/LICENSE) file for details.
