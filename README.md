@@ -42,27 +42,27 @@
 
 ### 🏠 Home Page
 
-![screenshot](https://github.com/abdalhamedemad/Fast-Pizza-Co./blob/main/screenshots/1.png?raw=true)
+![screenshot](https://github.com/abdalhamedemad/worldwise/blob/main/screenshots/1.png?raw=true)
 
 ### 💵 Pricing Page
 
-![screenshot](https://github.com/abdalhamedemad/Fast-Pizza-Co./blob/main/screenshots/2.png?raw=true)
+![screenshot](https://github.com/abdalhamedemad/worldwise/blob/main/screenshots/2.png?raw=true)
 
 ### ℹ️ About Page
 
-![screenshot](https://github.com/abdalhamedemad/Fast-Pizza-Co./blob/main/screenshots/3.png?raw=true)
+![screenshot](https://github.com/abdalhamedemad/worldwise/blob/main/screenshots/3.png?raw=true)
 
 ### 🗺️ Main Page
 
-![screenshot](https://github.com/abdalhamedemad/Fast-Pizza-Co./blob/main/screenshots/4.png?raw=true)
+![screenshot](https://github.com/abdalhamedemad/worldwise/blob/main/screenshots/4.png?raw=true)
 
 ### 🌐 Cities Section
 
-![screenshot](https://github.com/abdalhamedemad/Fast-Pizza-Co./blob/main/screenshots/5.png?raw=true)
+![screenshot](https://github.com/abdalhamedemad/worldwise/blob/main/screenshots/5.png?raw=true)
 
 ### ➕ Add info. Section
 
-![screenshot](https://github.com/abdalhamedemad/Fast-Pizza-Co./blob/main/screenshots/6.png?raw=true)
+![screenshot](https://github.com/abdalhamedemad/worldwise/blob/main/screenshots/6.png?raw=true)
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
