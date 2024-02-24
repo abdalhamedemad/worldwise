@@ -36,7 +36,7 @@
 
 ## 🚀 Live Demo <a name = "life_demo"></a>
 
-<a href="https://fastpizzaco23.netlify.app" _target="blank">Life Demo</a>
+
 
 ## 📸 Screenshots <a name = "screen_shots"></a>
 
